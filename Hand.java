@@ -11,43 +11,32 @@ import java.util.ArrayList;
 */
 public class Hand {
 
-	int value;
-	int numCards;
-	int numAces;
 	ArrayList<Card> cards;
 
 	public Hand() {
-		this.value = 0;
-		this.numCards = 0;
-		this.numAces = 0;
 		this.cards = new ArrayList<Card>();
 	}
 
-	/**
-	* A method that takes adds a card to a Hand and calculates its total value
-	*/
-	public boolean hit(Card c) {
-		cards.add(c);
-		String val = c.getVal();
-		if ((val.equals("J")) || (val.equals("Q")) || (val.equals("K"))) {
-			this.value += 10;
-		} else if (val.equals("A")) {
-			this.value += 11;
-			this.numAces += 1;
-		} else {
-			this.value += Integer.parseInt(val);
-		}
 
-		while ((numAces != 0) && (this.value > 21)) {
-			this.value -= 10;
-			numAces -= 1;
-		}
+	/**
+	* A method that takes a card and adds it to a Hand
+	*/
+	public void addCardtoHand(Card c) {
+		this.cards.add(c);
+	}
+
+	/**
+	* A method that draws a card from the top of a players hand
+	*/
+	public Card placeCard() {
+		return this.cards.remove(0);
+	}
+
+	/**
+	* A method that adds the pot to a player's hand
+	*/
+	public void addPot(Hand h) {
 		
-		if (this.value > 21) {
-			return false;
-		} else {
-			return true;
-		}
 	}
 
 	/**
@@ -70,13 +59,6 @@ public class Hand {
 		
 		Hand h = new Hand();
 
-		while (h.value < 21) {
-			Card c = d.draw();
-			h.hit(c);
-			System.out.println("Your cards are: ");
-			h.print();
-			System.out.println("Total value: " + Integer.toString(h.value));
-		}
 
 	}
 }
