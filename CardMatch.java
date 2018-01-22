@@ -6,7 +6,7 @@ import CardMatch.Hand;
 import java.util.Scanner;
 
 /** 
-* Input file description here.
+* This is the main file for playing CardMatch
 * @author Nag Alluri
 */
 public class CardMatch {
