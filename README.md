@@ -1,2 +1,2 @@
-# War
-A simple java program that plays the popular card game War with you
+# CardMatch
+A simple java program that plays a card game with you
