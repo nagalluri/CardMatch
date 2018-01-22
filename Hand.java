@@ -36,6 +36,11 @@ public class Hand {
 	* A method that adds the pot to a player's hand
 	*/
 	public void addPot(Hand h) {
+		ArrayList<Card> newHand = new ArrayList<Card>();
+		newHand.addAll(this.cards);
+		newHand.addAll(h.cards);
+		this.cards = newHand;
+		h.cards = new ArrayList<Card>();
 		
 	}
 
