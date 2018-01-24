@@ -1,7 +1,9 @@
-# CardMatch
+l# CardMatch
 A simple java program that plays a card game with you
 
 Here are the Rules:
+
+2 standard playing card decks are combined and shuffled, with both players being dealt 52 cards.
 
 On each player's turn, the player places the card at the top of their hand into a center pot.
 
