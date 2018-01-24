@@ -30,9 +30,9 @@ public class CardMatch {
 	*/
 	public void deal() {
 
-		for (int i = 0; i < 52; i++) {
+		for (int i = 0; i < 104; i++) {
 			Card c = this.deck.draw();
-			if (i < 26) {
+			if (i < 52) {
 				this.dealer.addCardtoHand(c);
 			} else {
 				this.player.addCardtoHand(c);

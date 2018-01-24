@@ -13,7 +13,7 @@ public class Deck {
 	private ArrayList<Card> cards;	
 
 	/** 
-	* A constructor for the Deck class
+	* A constructor for the Deck class, uses 2 standard playing card decks
 	*/
 	public Deck() {
 		ArrayList<Card> cards = new ArrayList<Card>();
@@ -34,6 +34,8 @@ public class Deck {
 				}
 				Card c = new Card(suit, value);
 				cards.add(c);
+				cards.add(c);
+
 			}
 		}
 		this.cards = cards;
