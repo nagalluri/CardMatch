@@ -11,7 +11,9 @@ If the value of the card at the top of the pot matches the value of the player's
 
 then the player adds all of the cards in the pot to the bottom of their hand.
 
-The first player to empty all of the cards in their hand loses.
+The goal of the game is to collect all of the cards.
+
+If you are out of cards, then you lose.
 
 Commands:
 
